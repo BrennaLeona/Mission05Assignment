@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Reservations";
+}
+<div class="text-center">
+    <br />
+    <h5>Fill out the form below to schedule Bliss Photo</h5>
+    <br />
+    <form id="calc">
+        <br />
+        <br />
+        <label for="numHours">How long would the photoshoot be?</label>
+        <input id="numHours" type="number" />
+        <br />
+        <label for="rate">Bliss's Hourly Rate: </label>
+        <input id="rate" type="number" disabled value="60"/>
+        <br />
+        <br />
+        <button class="btn" type="button" id="btnSubmit">Calculate</button>
+        <br />
+        <br />
+    </form>
+    <br />
+    <br />
+    <div id="outputBox">
+        <br />
+        <h5>Predicted Charge:</h5>
+        <p id="output"></p>
+        <br />
+    </div>
+</div>

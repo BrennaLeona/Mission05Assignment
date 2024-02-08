@@ -1,0 +1,116 @@
+html {
+  font-size: 14px;
+  font-family: Garamond;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+        font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background: white;
+  color: black;
+}
+
+.footer {
+    background: lightgray;
+    color: black;
+}
+
+.header {
+    background: lightgray;
+    color: black;
+}
+
+.blue {
+    background: cornflowerblue;
+    padding: 8px;
+    font-family: Garamond;
+    font-size: 20px;
+    color: black;
+}
+
+.intro {
+    font-family: Calibri;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: lightgray;
+}
+
+.content {
+    flex: 1;
+    padding-right: 20px;
+    margin-left: 10px;
+}
+
+.content2 {
+    flex: 1;
+    padding-left: 20px;
+    text-align: right;
+}
+
+.image {
+    flex-shrink: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.desc {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-family: Calibri;
+}
+
+#calc {
+    background: lightgray;
+}
+
+#outputBox {
+    background: cornflowerblue;
+}
+
+.btn {
+    background: cornflowerblue;
+    outline-color: black;
+    font-family: Calibri;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .desc {
+        flex-direction: column;
+    }
+
+    .content, .image, .content2 {
+        width: 100%; /* Full width on smaller screens */
+        padding: 0; /* No padding on smaller screens */
+    }
+}
+
+.extension {
+    background: lightgray;
+}
+
+.image-bottom {
+    display: flex;
+    justify-content: space-between;
+}
